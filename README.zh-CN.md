@@ -12,14 +12,11 @@
 <p align='center'>
 <a href="https://vitesse.netlify.app/">在线 Demo</a>
 </p>
-
 <br>
 
 <p align='center'>
 <a href="https://github.com/antfu/vitesse/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
-
-<br>
 
 ## 特性
 
@@ -110,72 +107,5 @@
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - 多合一的 I18n 支持
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-## 衍生项目
 
-由于这个模板的业务场景非常的局限，下面提供了一个精心策划的列表，列出了社区维护的具有不同偏好和功能集的衍生项目。也可以看看他们。当然也欢迎你 PR 提供自己的项目！
-
-###### 官方
-
-- [vitesse-lite](https://github.com/antfu/vitesse-lite) - Vitesse 的轻量版本
-- [vitesse-nuxt3](https://github.com/antfu/vitesse-nuxt3) - Vitesse 的 Nuxt 3 版本
-- [vitesse-nuxt-bridge](https://github.com/antfu/vitesse-nuxt-bridge) - Vitesse 的 Nuxt2 桥接版本
-- [vitesse-webext](https://github.com/antfu/vitesse-webext) - 开箱即用的浏览器扩展 vite 模板
-
-###### 社区
-
-[查看英文版](./README.md#community)
-
-## 现在可以试试!
-
-> Vitesse 需要 Node 版本 >=14.18
-
-### GitHub 模板
-
-[使用这个模板创建仓库](https://github.com/antfu/vitesse/generate).
-
-### 克隆到本地
-
-如果您更喜欢使用更干净的 git 历史记录手动执行此操作
-
-```bash
-npx degit antfu/vitesse my-vitesse-app
-cd my-vitesse-app
-pnpm i # 如果你没装过 pnpm, 可以先运行: npm install -g pnpm
-```
-
-## 清单
-
-使用此模板时，请尝试按照清单正确更新您自己的信息
-
-- [ ] 在 `LICENSE` 中改变作者名
-- [ ] 在 `App.vue` 中改变标题
-- [ ] 在 `vite.config.ts` 更改主机名
-- [ ] 在 `public` 目录下改变favicon
-- [ ] 移除 `.github` 文件夹中包含资助的信息
-- [ ] 整理 README 并删除路由
-
-紧接着, 享受吧 :)
-
-## 使用
-
-### 开发
-
-只需要执行以下命令就可以在 http://localhost:3333 中看到
-
-```bash
-pnpm dev
-```
-
-### 构建
-
-构建该应用只需要执行以下命令
-
-```bash
-pnpm build
-```
-
-然后你会看到用于发布的 `dist` 文件夹被生成。
-
-### 部署到 Netlify
-
-前往 [Netlify](https://app.netlify.com/start) 并选择你的仓库, 一路 `OK` 下去，稍等一下后，你的应用将被创建.
+ [Netlify](https://app.netlify.com/start)
