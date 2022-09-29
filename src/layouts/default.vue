@@ -1,9 +1,8 @@
 <template>
-  <main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-    <RouterView />
+  <main class="px-4 py-8 text-gray-700 dark:text-gray-200 flex flex-col items-center">
+    <RouterView v-slot="{ Component, route }">
+      <component :is="Component" :key="route" />
+    </RouterView>
     <Footer />
-    <div class="mt-5 mx-auto text-center opacity-75 dark:opacity-50 text-sm">
-      [Default Layout]
-    </div>
   </main>
 </template>

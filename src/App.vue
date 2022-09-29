@@ -1,14 +1,13 @@
 <script setup lang="ts">
-// https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-// they will be rendered correctly in the html results with vite-ssg
+import { StarportCarrier } from 'vue-starport'
+
 useHead({
-  title: 'Vitesse - [name]',
+  title: 'Vitesse - sooniter',
   meta: [
     { name: 'description', content: 'Opinionated Vite Starter Template' },
     {
       name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+      content: computed(() => isDark.value ? '#000' : '#ffffff'),
     },
   ],
   link: [
@@ -22,5 +21,36 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <Header />
+  <StarportCarrier>
+    <RouterView v-slot="{ Component, route }">
+      <Transition name="bounce">
+        <component :is="Component" :key="route" />
+      </Transition>
+    </RouterView>
+  </StarportCarrier>
 </template>
+
+<style scoped>
+/* .bounce-enter-begin {
+  transform: translateX(-100px);
+}
+
+.bounce-enter-end {
+  transform: translateX(0);
+} */
+
+.bounce-enter-active {
+  animation: bounce-in .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes bounce-in {
+  from {
+    transform: translateX(500px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+</style>
